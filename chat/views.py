@@ -25,6 +25,7 @@ def fetch_messages(request):
         str_messages = ''
         for message in messages:
             str_messages = str_messages + message.msg_content +"\n"
+        str_messages += "Auto Created Message:New Messages Starts Below\n\n"
         data = {
             'fetched_messages': str_messages
         }
